@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilham Aziz - Portofolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-white font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-white dark:bg-gray-800 shadow-md fixed w-full z-10">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="ilham.png" alt="Logo" class="w-8 h-8" />
+        <span class="text-xl font-bold">Ilham Aziz Saputra, S.T.</span>
+      </div>
+
+      <!-- Dark Mode Toggle -->
+      <button onclick="document.documentElement.classList.toggle('dark')" class="text-xl">
+        🌗
+      </button>
+
+      <!-- Menu -->
+      <ul class="hidden md:flex space-x-6 text-sm font-medium">
+        <li><a href="#beranda" class="hover:text-blue-600">Beranda</a></li>
+        <li><a href="#portofolio" class="hover:text-blue-600">Portofolio</a></li>
+        <li><a href="#kontak" class="hover:text-blue-600">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Beranda -->
+  <section id="beranda" class="pt-24 pb-16 bg-gray-50 dark:bg-gray-800">
+    <div class="max-w-4xl mx-auto px-4 text-center" data-aos="fade-up">
+      <h1 class="text-4xl font-bold mb-4">Halo, saya Ilham Aziz</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-300">
+        Seorang Electrical Engineer dengan minat dalam IoT, robotika, dan pengembangan sistem pintar. Saya telah mengembangkan beberapa proyek, termasuk robot pemilah sampah dan sistem kesehatan berbasis IoT.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portofolio -->
+  <section id="portofolio" class="py-16">
+    <div class="max-w-5xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-up">Portofolio</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <!-- Proyek -->
+        <div class="p-4 border rounded-lg shadow hover:shadow-lg" data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-2">Robot Pemilah Sampah</h3>
+          <p> Robot dengan motor DC encoder & kamera untuk pemilahan otomatis.</p>
+          <a href="robot-pemilah.html" class="text-blue-600 hover:underline font-medium">Selengkapnya</a>
+        </div>
+        <div class="p-4 border rounded-lg shadow hover:shadow-lg" data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-2">Medlink Smart V1</h3>
+          <p>Sistem monitoring pasien berbasis IoT dengan sensor kesehatan.</p>
+          <a href="medlink-v1.html" class="text-blue-600 hover:underline font-medium">Selengkapnya</a>
+        </div>
+        <div class="p-4 border rounded-lg shadow hover:shadow-lg" data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-2">Medlink Smart V2</h3>
+          <p>Peningkatan versi V1 dengan integrasi cloud dan dashboard real-time.</p>
+          <a href="medlink-v2.html" class="text-blue-600 hover:underline font-medium">Selengkapnya</a>
+        </div>
+        <div class="p-4 border rounded-lg shadow hover:shadow-lg" data-aos="fade-up">
+          <h3 class="text-xl font-semibold mb-2">Proyek Lain</h3>
+          <p>Proyek tambahan seperti kontrol pintu IoT, sistem QRIS sepeda listrik, dll.</p>
+          <a href="proyek-lain.html" class="text-blue-600 hover:underline font-medium">Selengkapnya</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-16 bg-gray-100 dark:bg-gray-800">
+    <div class="max-w-3xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10" data-aos="fade-up">Kontak</h2>
+      <form class="space-y-4" data-aos="fade-up">
+        <input type="text" placeholder="Nama" class="w-full p-3 rounded border dark:bg-gray-700" />
+        <input type="email" placeholder="Email" class="w-full p-3 rounded border dark:bg-gray-700" />
+        <textarea placeholder="Pesan" rows="4" class="w-full p-3 rounded border dark:bg-gray-700"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Kirim</button>
+      </form>
+
+      <!-- Ikon Sosial -->
+      <div class="flex justify-center mt-6 space-x-6 text-2xl">
+        <a href="https://github.com/IlhamAziz24" class="hover:opacity-75">
+          <img src="images-github.png" alt="GitHub" class="w-8 h-8">
+        </a>
+        <a href="https://www.linkedin.com/in/ilham-aziz-saputra-84b064298/" class="hover:opacity-75">
+          <img src="images-linkedin.png" alt="LinkedIn" class="w-8 h-8">
+        </a>
+        <a href="mailto:ilhamazizsaputra123@gmail.com" class="hover:opacity-75">
+          <img src="images-email.png" alt="Email" class="w-8 h-8">
+        </a>
+        <a href="https://www.instagram.com/robocreate.id/" class="hover:opacity-75">
+          <img src="images-instagram.png" alt="Instagram" class="w-8 h-8">
+        </a>
+        <a href="https://wa.me/+6285701219201" class="hover:opacity-75">
+          <img src="images-whatsapp.png" alt="Whatsapp" class="w-8 h-8">
+        </a>
+        <a href="https://x.com/Ilhamazzs" class="hover:opacity-75">
+          <img src="images-twitter.png" alt="Twitter" class="w-8 h-8">
+        </a>
+        <a href="https://www.tiktok.com/@ilhamazzs24" class="hover:opacity-75">
+          <img src="images-tiktok.png" alt="Tiktok" class="w-8 h-8">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
